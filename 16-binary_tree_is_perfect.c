@@ -51,6 +51,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 
 	if (tree == NULL)
 		return (0);
+
 	h = (int)binary_tree_height(tree);
 	nodes = (int)binary_tree_nodes(tree);
 	power = 1;
@@ -58,7 +59,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	for (i = 0; i < h; i++)
 		power *= 2;
 
-	if (power - 1 == nodes)
+	if ((power - 1) == nodes)
 		return (1);
 	else
 		return (0);
