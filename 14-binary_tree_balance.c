@@ -29,8 +29,8 @@ int subtree_height(const binary_tree_t *tree)
 
 int binary_tree_balance(const binary_tree_t *tree)
 {
-	size_t l;
-	size_t r;
+	int l;
+	int r;
 
 	if (tree == NULL)
 		return (0);
