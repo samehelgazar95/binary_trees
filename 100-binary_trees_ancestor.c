@@ -83,7 +83,8 @@ binary_tree_t *binary_trees_ancestor(
  *		while (s)
  *
  *		{
- *			if (s->n == first->n) * return ((binary_tree_t *)first);
+ *			if (s->n == first->n)
+ *				return ((binary_tree_t *)first);
  *			s = s->parent;
  *
  *		}
