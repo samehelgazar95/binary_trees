@@ -9,13 +9,13 @@
 
 size_t binary_tree_height(const binary_tree_t *tree)
 {
-	size_t left = 0;
-	size_t right = 0;
+	size_t left, right;
 
 	if (tree == NULL)
 		return (0);
 
 	left = tree->left ? binary_tree_height(tree->left) + 1 : 0;
+	printf("Hello\n");
 	right = tree->right ? binary_tree_height(tree->right) + 1 : 0;
 
 	return (left > right ? left : right);
